@@ -1,0 +1,102 @@
+#robot {
+	position:fixed;
+	top: 500px;
+	width: 10%;
+	height: 10%;
+}
+
+/*=============================================
+TOOLTIP ROBOT
+=============================================*/
+
+
+.tooltip-box{
+	display: none;
+	position: absolute;
+	background: #f5f7f7;
+	line-height:20px;
+	z-index: 500px;
+	text-align: center;
+	color:;
+	font-size: 18px;
+	padding:5px 10px;
+	left: 0;
+	bottom: 50px;
+	border-radius: 4px;	
+}
+
+.tooltip-box::after{
+
+	content:"";
+	display: block;
+	border-top: 9px solid #f5f7f7 ;
+	border-left: 9px solid transparent;
+	border-right: : 9px solid transparent;
+	position: absolute;
+	bottom: -9px;
+	left: calc(50% - 9px);
+
+}
+
+#robot:hover .tooltip-box{
+	display: inline-block;
+}
+
+
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+	#robot {
+	position:fixed;
+	top: 500px;
+	width: 10%;
+	height: 10%;
+}
+	}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+#robot {
+	position:fixed;
+	top: 500px;
+	width: 10%;
+	height: 10%;
+}	
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+	#robot {
+	position:fixed;
+	top: 500px;
+	width: 10%;
+	height: 10%;
+}
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	#robot {
+	position:fixed;
+	top: 500px;
+	width: 10%;
+	height: 10%;
+
+	
+}
+}
+
+

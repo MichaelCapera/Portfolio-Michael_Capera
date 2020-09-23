@@ -1,0 +1,163 @@
+@keyframes cambio{
+
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+
+#fondo1{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo1.jpg);
+	background-size: cover;
+}
+#fondo2{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo2.jpg);
+	background-size: cover;
+}
+#fondo3{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo3.jpg);
+	background-size: cover;
+}
+#fondo4{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fondo4.jpg);
+	background-size: cover;
+	animation: cambio 10s;
+}
+#fotoPerfil{
+    position: absolute;
+	margin-top: 10px;
+	/*width: 400px;
+	height: 400px;
+	z-index: 1;*/
+	
+
+}
+#foto{
+    border-radius: 26px;
+	
+}
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+	#fotoPerfil{
+    position: absolute;
+	margin-top: 10px;
+	width: 400px;
+	height: 400px;
+	z-index: 1;
+	
+
+}
+}
+
+
+
+
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+#fotoPerfil{
+    position: absolute;
+	margin-top: 10px;
+	width: 400px;
+	height: 400px;
+	z-index: 1;
+	
+
+}
+}
+
+
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+	
+	#fotoPerfil{
+    position: absolute;
+	margin-top: 10px;
+	width: 400px;
+	height: 400px;
+	z-index: 1;
+	
+
+}
+}
+
+
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	#fotoPerfil{
+    position: absolute;
+	top: 0;
+	width: 2px;
+	height: 11vh;
+	left: 1%;
+	display: inline-block;
+	z-index: 1;
+	
+
+}
+
+#fondo1{
+	position: absolute;
+	width: 100%;
+	height: 150vh;
+	background: url(../img/fondo1.jpg);
+	background-size: cover;
+}
+#fondo2{
+	position: absolute;
+	width: 100%;
+	height: 150vh;
+	background: url(../img/fondo2.jpg);
+	background-size: cover;
+}
+#fondo3{
+	position: absolute;
+	width: 100%;
+	height: 150vh;
+	background: url(../img/fondo3.jpg);
+	background-size: cover;
+}
+#fondo4{
+	position: absolute;
+	width: 100%;
+	height: 150vh;
+	background: url(../img/fondo4.jpg);
+	background-size: cover;
+	animation: cambio 10s;
+}
+}

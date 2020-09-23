@@ -1,0 +1,77 @@
+#footer{
+	
+	position: absolute;
+	top: 570px;
+	left: 45%;
+	display: inline-block;
+	color white;
+	background-color: transparent;
+	z-index: 2;
+	
+}
+
+#footer p{
+	color: white;
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	#footer{
+	position: absolute;
+	top: 700px;
+	left: 45%;
+	display: inline-block;
+	color white;
+	background-color: transparent;
+	z-index: 1;
+	
+}
+
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+	
+	#footer{
+	
+	position: absolute;
+	top: 600px;
+	left: 45%;
+	display: inline-block;
+	color white;
+	background-color: transparent;
+	z-index: 1;
+	display: none;
+	
+}
+}
+
+
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	#footer{
+	
+	position: absolute;
+	top: 500px;
+	left: 45%;
+	display: inline-block;
+	color white;
+	background-color: transparent;
+	z-index: 1;
+	display: none;
+	
+}
+}
