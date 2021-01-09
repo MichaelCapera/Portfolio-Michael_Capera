@@ -43,17 +43,23 @@
 }
 #fotoPerfil{
     position: absolute;
-	margin-top: 10px;
+	margin-top: 20%;
+	animation: cambio 2s;
 	/*width: 400px;
 	height: 400px;
 	z-index: 1;*/
 	
 
 }
-#foto{
-    border-radius: 26px;
-	
+#foto:hover{
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
 }
+
 
 /*=============================================
 ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
@@ -69,6 +75,21 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 	
 
 }
+
+#foto{
+	position:relative;
+	width: 250px;
+	height: 250px;
+	top:20%;
+	border: 1px solid white ;
+    border-radius: 50%;
+    left:40%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+   -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+
+}
+
+
 }
 
 
@@ -90,6 +111,20 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 	
 
 }
+#foto{
+	
+	position:relative;
+	width: 200px;
+	height: 200px;
+	top:20%;
+	left:40%;
+	border-radius:50%;
+	box-shadow: 0px 0px 15px 15px #ec731e;
+   -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+
+}
+
+
 }
 
 
@@ -106,9 +141,17 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 	width: 400px;
 	height: 400px;
 	z-index: 1;
-	
-
 }
+
+#foto{
+	position: relative;
+	top:12%;
+	left: 30%;
+	box-shadow: 0px 0px 15px 15px #ec731e;
+   -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+   border-radius:50%;
+}
+
 }
 
 
@@ -130,9 +173,21 @@ MOVIL (XS revisamos en 320px)
 	
 
 }
+#foto{
+	position: relative;
+	top:-20%;
+	left: 4000%;
+	border: 1px solid white ;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ec731e
+    
+}
+
+
 
 #fondo1{
 	position: absolute;
+	top:100%;
 	width: 100%;
 	height: 150vh;
 	background: url(../img/fondo1.jpg);
@@ -160,4 +215,22 @@ MOVIL (XS revisamos en 320px)
 	background-size: cover;
 	animation: cambio 10s;
 }
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:300px){
+
+	#foto{
+	position: relative;
+	top:-20%;
+	border: 1px solid white ;
+    border-radius: 50%;
+    left: 2000%;
+}
+
+
+
 }

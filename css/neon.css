@@ -128,5 +128,18 @@ z-index: 1;
 	transition: 0.2s;
 }
 
+#Soft{
+	top:20%;
+	left:12%;
+  }
+
+}
+
+@media (max-width:300px){
+
+#Soft{
+	top:20%;
+	left:5%;
+  }
 }
 
