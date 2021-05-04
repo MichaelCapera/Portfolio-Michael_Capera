@@ -43,7 +43,7 @@
 	display : block;
 }
 
-#span1{
+.span1{
     top:0;
 	left: -100%;
 	width: 100%;
@@ -51,7 +51,7 @@
 	background: linear-gradient(90deg,transparent,#07bdf5);
 }
 
-.btn-neon:hover #span1
+.btn-neon:hover .span1
 {
 	left: 100%;
 	transition: 1s;
