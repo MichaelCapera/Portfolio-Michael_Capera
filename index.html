@@ -7,11 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">-->
 	<!--=====================================
-	Marcado HTML5
+	HTML5 Markup
 	======================================-->
-	<meta name="title" content="Michael Capera | Desarrollador de Software">		
-	<meta name="description" content="Desarrollo web, aplicaciones móviles SEO y marketing digital. Software empresarial. Alojamiento web.">	
-	<meta name="keyword" content="dieño,web,desarrollo,software,marketing,seo">
+	<meta name="title" content="Michael Capera | Software Engineer">		
+	<meta name="description" content="Web development, SEO mobile applications and digital marketing. Business software. Web hosting and cloud, AWS, AI.">	
+	<meta name="keyword" content="development,software,marketing,seo,data,cloud,aws,ai">
 
 	<!--=====================================
 	    CSS
@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/fontello.css">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/robot.css">
   
 	<!-- Bootstrap CSS -->
@@ -36,17 +36,27 @@
 <body>
 
 	<!--=====================================
-	HEADER NAVA BAR
+	HEADER NAV BAR
 	======================================-->
    
- <header>
-		<div class="contenedor">
-			<h1 class="icon-chart-line">Michael Capera</h1>
+ <header style="height: 180px; background-color: black;">
+	<div class="container">
+			<a href="index.html">
+				<div style="display: flex;align-items: center; margin-top: 20px;">
+					<div>
+                      <img src="./icons/cloud-icon.png" style="width: 80px;margin-right: 20px;">
+					</div>
+					<div>
+                       <h1>Michael Capera</h1>
+					</div>
+				</div>
+			</a>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
+				<div id="mainArrow" class="neon-arrow"></div>
 				<a href="index.html">Home</a>
-				<a href="portafolio.html">Portfolio</a>
+				<a href="portfolio.html">Portfolio</a>
 				
       </nav>
 			
@@ -57,8 +67,8 @@
 	PHOTO
 	======================================-->
 
-	<div id= "fotoPerfil">
-  	<img id="foto" src="img/fotoperfil.png" alt="">
+	<div id= "profilePhoto">
+  	<img id="photo" src="img/profilePhoto.png" alt="">
     </div>
 
     <!--=====================================
@@ -70,10 +80,9 @@
     <br>
 	
 
-	<a id="Soft" href="#" class="btn-neon" style="text-decoration: none;">
+	<a id="Soft" href="#" class="btn-neon" style="text-decoration: none;margin-top: 35%;">
 		<span class="span1"></span>
-		
-		software developer
+		Software Engineer
 	</a>
 	<br>
 
@@ -142,7 +151,7 @@
 
 	 <footer>
  	<div id="footer">
- 		<p>Michael Capera 2021 &copy;</p>
+ 		<p id="copy-footer"></p>
  	</div>
  	
  </footer>
@@ -161,6 +170,19 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script>
+		const year = new Date().getFullYear();
+		const copyText = `Michael Capera ${year} \u00A9`;
+		const copyElement = document.getElementById('copy-footer');
+		copyElement.textContent = copyText;
+
+	window.onload = () => {
+    setTimeout( () => {
+      const arrow = document.getElementById('mainArrow');
+      arrow.classList.add('hide-arrow');
+    }, 5000);
+  };
+	</script>
 
     
 	

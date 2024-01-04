@@ -41,9 +41,9 @@
 	background-size: cover;
 	animation: cambio 10s;
 }
-#fotoPerfil{
+#profilePhoto{
     position: absolute;
-	margin-top: 20%;
+	margin-top: 50%;
 	animation: cambio 2s;
 	/*width: 400px;
 	height: 400px;
@@ -51,7 +51,7 @@
 	
 
 }
-#foto:hover{
+#photo:hover{
 border-radius:50%;
 -webkit-border-radius:50%;
 box-shadow: 0px 0px 15px 15px #ec731e;
@@ -66,17 +66,15 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 =============================================*/
 
 @media (min-width:1200px){
-	#fotoPerfil{
+	#profilePhoto{
     position: absolute;
-	margin-top: 10px;
+	margin-top: 10%;
 	width: 400px;
 	height: 400px;
 	z-index: 1;
-	
-
 }
 
-#foto{
+#photo{
 	position:relative;
 	width: 250px;
 	height: 250px;
@@ -102,7 +100,7 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 
 @media (max-width:1199px) and (min-width:992px){
 
-#fotoPerfil{
+#profilePhoto{
     position: absolute;
 	margin-top: 10px;
 	width: 400px;
@@ -111,7 +109,7 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 	
 
 }
-#foto{
+#photo{
 	
 	position:relative;
 	width: 200px;
@@ -135,15 +133,15 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 
 @media (max-width:991px) and (min-width:768px){
 	
-	#fotoPerfil{
+	#profilePhoto{
     position: absolute;
-	margin-top: 10px;
+	margin-top: 35%;
 	width: 400px;
 	height: 400px;
 	z-index: 1;
 }
 
-#foto{
+#photo{
 	position: relative;
 	top:12%;
 	left: 30%;
@@ -162,7 +160,7 @@ MOVIL (XS revisamos en 320px)
 
 @media (max-width:767px){
 
-	#fotoPerfil{
+	#profilePhoto{
     position: absolute;
 	top: 0;
 	width: 2px;
@@ -170,10 +168,11 @@ MOVIL (XS revisamos en 320px)
 	left: 1%;
 	display: inline-block;
 	z-index: 1;
+	margin-top: 70%;
 	
 
 }
-#foto{
+#photo{
 	position: relative;
 	top:-20%;
 	left: 4000%;
@@ -223,7 +222,7 @@ MOVIL (XS revisamos en 320px)
 
 @media (max-width:300px){
 
-	#foto{
+	#photo{
 	position: relative;
 	top:-20%;
 	border: 1px solid white ;

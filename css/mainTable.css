@@ -16,6 +16,7 @@ background: linear-gradient(66deg, rgba(2,0,36,1) 0%, rgba(4,4,75,1) 14%, rgba(0
 	height: 70%;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 7%;
 }
 .item{
 	display: flex;
@@ -70,10 +71,17 @@ hr{
 	border: none;
 	width: 98%;
 	height: 2px;
-	background: rgba(242,242,242,0.5)
+	background: rgba(242,242,242,0.5);
 	margin: 15px 0px;
 }
 .item:hover{
 	transform: translateY(8px);
 	border-color: #17D1F2;
 }
+@media only screen and (max-width: 767px) {
+
+	.container-table {
+		margin-top: 26%;
+	}
+}
+  

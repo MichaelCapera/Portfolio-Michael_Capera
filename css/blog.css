@@ -1,8 +1,8 @@
-#blog h3,h4,{
+#blog h3,h4{
 	text-align: center;
 }
 
-#blog .contenedor{
+#blog .container{
 	display: flex;
 	justify-content: left;
 	flex-wrap: wrap;
