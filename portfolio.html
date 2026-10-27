@@ -1,267 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Michael Capera</title>
-	<link rel="icon" type="image/jpg" href="img/A1.jpg">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-	<!--=====================================
-	Marcado HTML5
-	======================================-->
-	<meta name="title" content="Michael Capera | Desarrollador de Software">		
-	<meta name="description" content="Desarrollo web, aplicaciones móviles SEO y marketing digital. Software empresarial. Alojamiento web.">	
-	<meta name="keyword" content="dieño,web,desarrollo,software,marketing,seo">
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/fontello.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/robot.css">
-  <link rel="stylesheet" href="css/mainTable.css">
-  <link rel="stylesheet" href="css/table.css">
-  
-	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio | Michael Capera</title>
+	<meta name="description" content="Projects by Michael Capera: ecommerce, marketplaces, banking widgets, landing pages and AI apps.">
+	<link rel="icon" type="image/png" href="icons/cloud-icon.png">
 
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
-   
-	<header style="height: 150px; background-color: black;">
-		<div class="container">
-			<a href="index.html">
-				<div style="display: flex;align-items: center; margin-top: 20px;">
-					<div>
-                      <img src="./icons/cloud-icon.png" style="width: 80px;margin-right: 20px;">
-					</div>
-					<div>
-                       <h1>Michael Capera</h1>
-					</div>
-				</div>
-			</a>
-			<input type="checkbox" id="menu-bar">
-			<label class="icon-menu" for="menu-bar"></label>
-			<nav class="menu">
-				<a href="index.html">Home</a>
-				<a href="portfolio.html">Portfolio</a>
-				
-      </nav>
-			
-		</div>
+
+	<div class="background" aria-hidden="true"></div>
+
+	<!--=====================================
+	HEADER
+	======================================-->
+
+	<header class="site-header">
+		<a class="brand" href="index.html">
+			<img src="icons/cloud-icon.png" alt="">
+			<span>Michael Capera</span>
+		</a>
+
+		<button class="menu-toggle icon-menu" aria-label="Open menu" aria-controls="menu" aria-expanded="false"></button>
+
+		<nav class="menu" id="menu">
+			<a href="index.html">Home</a>
+			<a href="portfolio.html" aria-current="page">Portfolio</a>
+		</nav>
 	</header>
-	
-	<!---First container -->
 
-	<div class="containerTable">
-	
-		<div class="container-table">
-		    <div class="item">
-		    	<h2>Andreas83</h2>
-		    	<h1>Ecommerce</h1>
-		    	<p>Technologies</p>
-		    	<ul>
-		    		<li>HTML5</li>
-		    		<li>CSS3</li>
-		    		<li>JavaScript</li>
-		    		<li>Jquery</li>
-		    		<li>PHP</li>
-		    		<li>SQL</li>
-		    	</ul>
-		    	
-		    	<a href="https://andreas83.com/" target="blank"><button>GO</button></a>
+	<!--=====================================
+	PROJECTS
+	======================================-->
 
-		    </div>
-			
-			<div class="item">
-		    	<h2>Comprelo a</h2>
-		        <h2>domicilio</h2>
-		    	<h1>MarketPlace</h1>
-		    	<p>Technologies</p>
-		    	<ul>
-		    		<li>TypeScript</li>
-		    		<li>Angular</li>
-		    		<li>PHP</li>
-		    		<li>Laravel</li>
-                    
-		    	
+	<main class="portfolio">
+		<h1 class="portfolio-title">Portfolio</h1>
 
-		    	</ul>
-		    	<a href="https://compreloadomicilio.com/co" target="blank"><button>GO</button></a>
+		<ul class="projects">
 
-		    </div>
-			
-		    <div class="item">
-		    	<h2>Agrapp</h2>
-		        <h2>co</h2>
-		    	<h1>App</h1>
-		    	<p>Technologies</p>
-		    	<ul>
-		    		<li>TypeScript</li>
-		    		<li>Angular</li>
-		    		<li>Graphql</li>
-		    		<li>DynamoDB</li>
-                    
-		    	
+			<li>
+				<article class="card">
+					<h2 class="card-client"><a href="https://www.cohnecti.com/" target="_blank" rel="noopener noreferrer">Cohnecti</a></h2>
+					<p class="card-type">Roca ERP</p>
+					<p class="card-period">Software Engineer · 2026 – Present</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>Python</li>
+						<li>Django</li>
+						<li>React JS</li>
+						<li>AWS</li>
+						<li>Terraform</li>
+					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Cloud-native ERP platform supporting the company's operations and financial transactions.</p>
+						<ul>
+							<li>Develop serverless, high-availability microservices with AWS Lambda (Python) and API Gateway.</li>
+							<li>Implemented Infrastructure as Code with Terraform, reducing deployment time by 40%.</li>
+							<li>Scaled core monolithic workflows with Celery background tasks and Docker containers on AWS ECS, automated through Bitbucket Pipelines.</li>
+							<li>Manage high-volume DynamoDB and RDS databases for financial transactions.</li>
+							<li>Apply unit testing and TDD, and maintain API documentation.</li>
+						</ul>
+						<p class="card-stack">Python · Django · Celery · React JS · AWS Lambda · API Gateway · ECS · Docker · Terraform · Bitbucket Pipelines · DynamoDB · RDS</p>
+					</details>
+					<a class="card-link" href="https://rocaerp.com/" target="_blank" rel="noopener noreferrer">Go</a>
+				</article>
+			</li>
 
-		    	</ul>
-		    	<a href="https://www.agrapp.co/" target="blank"><button>GO</button></a>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Banco de Bogotá</h2>
+					<p class="card-type">Banking software</p>
+					<p class="card-period">Software Engineer · 2021 – 2025</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>AWS Lambda</li>
+						<li>API Gateway</li>
+						<li>Terraform</li>
+						<li>DynamoDB</li>
+						<li>Stencil JS</li>
+					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Serverless services and reusable web components for critical banking operations.</p>
+						<ul>
+							<li>Built serverless, high-availability applications with AWS Lambda (Node.js / Python) and API Gateway.</li>
+							<li>Provisioned and managed cloud resources as code with Terraform.</li>
+							<li>Managed high-volume DynamoDB and RDS databases for financial transactions.</li>
+							<li>Created reusable Stencil.js web components to standardize UI development across the organization.</li>
+							<li>Applied unit testing and TDD, and wrote API documentation.</li>
+						</ul>
+						<p class="card-stack">Node.js · Python · TypeScript · AWS Lambda · API Gateway · AppSync · Terraform · DynamoDB · RDS · Stencil JS</p>
+					</details>
+					<a class="card-link" href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas" target="_blank" rel="noopener noreferrer">Go</a>
+				</article>
+			</li>
 
-		    </div>
-			
-	        <div class="item">
-		    	<h2>Casa editorial</h2>
-		        <h2>el </h2>
-		    	<h1>Tiempo</h1>
-		    	<p>Technologies</p>
-		    	<ul>
-		    		<li>HTML</li>
-		    		<li>SASS</li>
-		    		<li>JavaScript</li>
-		    		<li>CSS</li>
-                    
-		    	
+			<li>
+				<article class="card">
+					<h2 class="card-client">Casa Editorial El Tiempo</h2>
+					<p class="card-type">News site</p>
+					<p class="card-period">Software Engineer · 2021</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>HTML</li>
+						<li>SASS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>High-traffic websites and landing pages for one of Colombia's largest media groups.</p>
+						<ul>
+							<li>Developed and optimized high-traffic websites and landing pages.</li>
+							<li>Delivered fully responsive, cross-browser interfaces with a focus on accessibility.</li>
+							<li>Worked closely with UX/UI designers to turn complex wireframes into usable interfaces.</li>
+						</ul>
+						<p class="card-stack">HTML · CSS · SASS · JavaScript · PHP</p>
+					</details>
+					<a class="card-link" href="https://www.eltiempo.com/" target="_blank" rel="noopener noreferrer">Go</a>
+				</article>
+			</li>
 
-		    	</ul>
-		    	<a href="https://www.eltiempo.com/" target="blank"><button>GO</button></a>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Agrapp.co</h2>
+					<p class="card-type">App</p>
+					<p class="card-period">Software Engineer · 2021</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>TypeScript</li>
+						<li>Angular</li>
+						<li>GraphQL</li>
+						<li>DynamoDB</li>
+					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Agricultural platform with a modern Angular client backed by GraphQL and AWS.</p>
+						<ul>
+							<li>Built key application features with Angular.</li>
+							<li>Integrated GraphQL through Apollo Client for efficient data fetching.</li>
+							<li>Used DynamoDB and AWS APIs for data storage and application features.</li>
+						</ul>
+						<p class="card-stack">TypeScript · Angular · GraphQL · Apollo Client · DynamoDB · AWS</p>
+					</details>
+					<a class="card-link" href="https://www.agrapp.co/" target="_blank" rel="noopener noreferrer">Go</a>
+				</article>
+			</li>
 
-		    </div>
-			
-		<div class="item">
-				<h2>Banco de Bogotá</h2>
-				 <h2>Bank</h2>
-				 <h1>Widget</h1>
-			 <p>Technologies</p>
-		 <ul>
-			 <li>AWS</li>
-			 <li>AppSync</li>
-			 <li>Stencil JS</li>
-			 <li>Typescript</li>
-		 
-		 </ul>
-		 <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas" target="blank"><button>GO</button></a>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Comprelo a domicilio</h2>
+					<p class="card-type">Marketplace</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>TypeScript</li>
+						<li>Angular</li>
+						<li>PHP</li>
+						<li>Laravel</li>
+					</ul>
+					<a class="card-link" href="https://compreloadomicilio.com/co" target="_blank" rel="noopener noreferrer">Go</a>
+				</article>
+			</li>
 
-	        </div>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Nevado Bit Software</h2>
+					<p class="card-type">Landing</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>Angular</li>
+						<li>cPanel</li>
+						<li>PHP</li>
+						<li>TypeScript</li>
+					</ul>
+					<a class="card-link" href="https://www.nevadobit.com/" target="_blank" rel="noopener noreferrer">Go</a>
+				</article>
+			</li>
 
-			<div class="item">
-				<h2>Nevado Bit</h2>
-				 <h2>Software</h2>
-				 <h1>Landing</h1>
-			 <p>Technologies</p>
-		 <ul>
-			 <li>Angular</li>
-			 <li>Cpanel</li>
-			 <li>PHP</li>
-			 <li>Typescript</li>
-		 
-		 </ul>
-		 <a href="https://www.nevadobit.com/" target="blank"><button>GO</button></a>
+			<li>
+				<article class="card">
+					<h2 class="card-client">BitBot AI Lab</h2>
+					<p class="card-type">AI software landing</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>Vue JS</li>
+						<li>cPanel</li>
+						<li>PHP</li>
+						<li>JavaScript</li>
+					</ul>
+					<p class="card-status">Inactive project</p>
+				</article>
+			</li>
 
-	        </div>
+			<li>
+				<article class="card">
+					<h2 class="card-client">BitBot App</h2>
+					<p class="card-type">AI app prototype</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>Ionic</li>
+						<li>AWS</li>
+						<li>CloudFront</li>
+						<li>API</li>
+					</ul>
+					<p class="card-status">Inactive project</p>
+				</article>
+			</li>
 
-			
-			<div class="item">
-				<h2>BitBot AI Lab</h2>
-				 <h2>AI Software</h2>
-				 <h1>Landing</h1>
-			 <p>Technologies</p>
-		 <ul>
-			 <li>Vue JS</li>
-			 <li>Cpanel</li>
-			 <li>PHP</li>
-			 <li>JavaScript</li>
-		 
-		 </ul>
-		 <a href="https://bitbotailab.com/" target="blank"><button>GO</button></a>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Cursos Virtuales</h2>
+					<p class="card-type">Online courses</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>PHP</li>
+						<li>SQL</li>
+					</ul>
+					<p class="card-status">Inactive project</p>
+				</article>
+			</li>
 
-	        </div>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Medical App</h2>
+					<p class="card-type">App</p>
+					<p class="card-period">Backend Developer · 2019 – 2020</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>PHP</li>
+						<li>AJAX</li>
+						<li>jQuery</li>
+						<li>SQL</li>
+						<li>JavaScript</li>
+						<li>HTML5</li>
+					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Web application for the medical sector, built end to end on the backend.</p>
+						<ul>
+							<li>Led full-cycle backend development, managing data flow and application logic.</li>
+							<li>Structured the code with the MVC pattern for maintainability.</li>
+							<li>Designed and optimized the database for efficient data access.</li>
+						</ul>
+					</details>
+					<p class="card-status">Inactive project</p>
+				</article>
+			</li>
 
-			<div class="item">
-				<h2>BitBot App</h2>
-				 <h2>AI Software</h2>
-				 <h1>Prototype</h1>
-			 <p>Technologies</p>
-		 <ul>
-			 <li>IONIC</li>
-			 <li>AWS</li>
-			 <li>Cloud Front</li>
-			 <li>API</li>
-		 
-		 </ul>
-		 <a href="https://del3nr53j0vo7.cloudfront.net/" target="blank"><button>GO</button></a>
+			<li>
+				<article class="card">
+					<h2 class="card-client">El Madrugón</h2>
+					<p class="card-type">Ecommerce marketplace</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>Angular</li>
+						<li>Firebase</li>
+						<li>TypeScript</li>
+						<li>JSON</li>
+					</ul>
+					<p class="card-status">Inactive project</p>
+				</article>
+			</li>
 
-	        </div>
+			<li>
+				<article class="card">
+					<h2 class="card-client">Andreas83</h2>
+					<p class="card-type">Ecommerce</p>
+					<p class="card-period">Web Developer · 2018 – 2019</p>
+					<p class="card-label">Technologies</p>
+					<ul class="tech">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>PHP</li>
+						<li>SQL</li>
+					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Ecommerce web applications built and maintained for the client's business.</p>
+						<ul>
+							<li>Built and maintained web applications with PHP, JavaScript, HTML and CSS.</li>
+							<li>Applied the MVC pattern to keep the code scalable.</li>
+							<li>Improved interactivity with jQuery and helped define technical requirements with the client.</li>
+						</ul>
+					</details>
+					<p class="card-status">Inactive project</p>
+				</article>
+			</li>
 
-			
-			
-			<div class="item">
-		    	<h2>Cursos Virtuales</h2>
-		    	<h1>Cursos</h1>
-		    	<p>Technologies</p>
-		    	<ul>
-		    		<li>HTML5</li>
-		    		<li>CSS3</li>
-		    		<li>JavaScript</li>
-		    		<li>Jquery</li>
-		    		<li>PHP</li>
-		    		<li>SQL</li>
-		    	</ul>
-				<p class="neon-warning">Inactive Project</p>
-		    	<!-- <a href="https://cursosvirtualesweb.com/" target="blank"><button>GO</button></a> -->
+		</ul>
+	</main>
 
-		    </div>
+	<!--=====================================
+	FOOTER
+	======================================-->
 
-			<div class="item">
-		    	<h2>Medical App</h2>
-		    	<h1>App</h1>
-		    	<p>Technologies</p>
-		    	<ul>
-		    		<li>PHP</li>
-		    		<li>AJAX</li>
-		    		<li>JQUERY</li>
-		    		<li>SQL</li>
-                    <li>JavaScript</li>
-		    		<li>HTML5</li>
+	<footer class="site-footer">
+		<p>&copy; <span id="year">2026</span> Michael Capera</p>
+	</footer>
 
-		    	</ul>
-				<p class="neon-warning">Inactive Project</p>
-		    	<!-- <a href="https://pruebasapp.aqp.red/" target="blank"><button>GO</button></a> -->
-
-		    </div>
-
-			<div class="item">
-				<h2>El Madrugón</h2>
-				 <h2>Ecommerce</h2>
-				 <h1>MarketPlace</h1>
-			 <p>Technologies</p>
-		 <ul>
-			 <li>Angular</li>
-			 <li>Firebase</li>
-			 <li>Typescript</li>
-			 <li>Json</li>
-		 
-		 </ul>
-		 <p class="neon-warning">Inactive Project</p>
-		 <!-- <a href="https://elmadrugon.com.co/" target="blank"><button>GO</button></a> -->
-
-	 </div>
-
-			
-		</div>
-	</div>
-
-
-
-  	
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    
-	
+	<script src="js/main.js"></script>
 </body>
-
 </html>

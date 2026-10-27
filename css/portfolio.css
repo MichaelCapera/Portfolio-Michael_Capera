@@ -1,0 +1,188 @@
+/*=============================================
+PORTFOLIO
+=============================================*/
+
+.portfolio {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 48px var(--gutter) 64px;
+}
+
+.portfolio-title {
+	font-family: var(--font-display);
+	font-size: clamp(26px, 4vw, 40px);
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	text-shadow: 0 0 12px var(--neon-soft);
+}
+
+.projects {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 28px;
+}
+
+/*=============================================
+CARD
+=============================================*/
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 100%;
+	padding: 28px 24px;
+	text-align: center;
+	background: #000;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	box-shadow: 0 0 0 8px #000;
+	transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+	transform: translateY(8px);
+	border-color: #17d1f2;
+}
+
+.card-client {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.card-type {
+	font-family: var(--font-display);
+	font-size: 22px;
+	color: var(--neon);
+}
+
+.card-label {
+	margin-top: 8px;
+	font-size: 13px;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.tech {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 6px;
+	margin-bottom: 12px;
+}
+
+.tech li {
+	padding: 3px 10px;
+	font-size: 13px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 999px;
+}
+
+.card-client a {
+	text-decoration: none;
+	border-bottom: 1px dashed var(--neon);
+}
+
+.card-client a:hover {
+	color: var(--neon);
+}
+
+.card-period {
+	font-size: 14px;
+	color: var(--text-muted);
+}
+
+/*=============================================
+DETAILS (desplegable)
+=============================================*/
+
+.card-details {
+	margin-bottom: 12px;
+	text-align: left;
+	font-size: 14px;
+	color: var(--text-muted);
+}
+
+.card-details summary {
+	width: fit-content;
+	margin: 0 auto;
+	padding: 4px 12px;
+	color: var(--neon);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.card-details summary::-webkit-details-marker {
+	display: none;
+}
+
+.card-details summary::before {
+	content: "▸";
+	display: inline-block;
+	margin-right: 6px;
+	transition: transform 0.2s;
+}
+
+.card-details[open] summary::before {
+	transform: rotate(90deg);
+}
+
+.card-details > p:first-of-type {
+	margin-top: 12px;
+	color: var(--text);
+}
+
+.card-details ul {
+	margin: 10px 0 0 18px;
+}
+
+.card-details li + li {
+	margin-top: 6px;
+}
+
+.card-stack {
+	margin-top: 12px;
+	padding-top: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	font-size: 13px;
+}
+
+/* El botón/estado siempre queda al fondo de la tarjeta */
+.card-link,
+.card-status {
+	margin-top: auto;
+}
+
+.card-link {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	background: linear-gradient(66deg, #020024 0%, #04044b 14%, #00d4ff 100%);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-link:hover {
+	transform: translateY(2px);
+	box-shadow: 0 0 14px var(--neon);
+}
+
+.card-status {
+	padding: 10px;
+	color: var(--warning);
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 0 0 8px var(--warning);
+}

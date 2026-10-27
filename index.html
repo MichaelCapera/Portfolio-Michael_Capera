@@ -1,191 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Michael Capera</title>
-	<link rel="icon" type="image/jpg" href="img/A1.jpg">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">-->
-	<!--=====================================
-	HTML5 Markup
-	======================================-->
-	<meta name="title" content="Michael Capera | Software Engineer">		
-	<meta name="description" content="Web development, SEO mobile applications and digital marketing. Business software. Web hosting and cloud, AWS, AI.">	
-	<meta name="keyword" content="development,software,marketing,seo,data,cloud,aws,ai">
+	<title>Michael Capera | Software Engineer</title>
+	<meta name="description" content="Michael Capera, Software Engineer. Web development, mobile applications, cloud (AWS) and AI.">
+	<link rel="icon" type="image/png" href="icons/cloud-icon.png">
 
-	<!--=====================================
-	    CSS
-	======================================-->
+	<!-- Open Graph: vista previa al compartir el enlace -->
+	<meta property="og:title" content="Michael Capera | Software Engineer">
+	<meta property="og:description" content="Web development, mobile applications, cloud (AWS) and AI.">
+	<meta property="og:image" content="https://michaelcapera.github.io/Portfolio-Michael_Capera/img/fondo4.jpg">
+	<meta property="og:url" content="https://michaelcapera.github.io/Portfolio-Michael_Capera/">
+	<meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/fontello.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/robot.css">
-  
-	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	
-
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/home.css">
 </head>
-
-<!--=====================================
-	BODY
-	======================================-->
 
 <body>
 
+	<div class="background" aria-hidden="true"></div>
+
 	<!--=====================================
-	HEADER NAV BAR
+	HEADER
 	======================================-->
-   
- <header style="height: 180px; background-color: black;">
-	<div class="container">
-			<a href="index.html">
-				<div style="display: flex;align-items: center; margin-top: 20px;">
-					<div>
-                      <img src="./icons/cloud-icon.png" style="width: 80px;margin-right: 20px;">
-					</div>
-					<div>
-                       <h1>Michael Capera</h1>
-					</div>
-				</div>
-			</a>
-			<input type="checkbox" id="menu-bar">
-			<label class="icon-menu" for="menu-bar"></label>
-			<nav class="menu">
-				<div id="mainArrow" class="neon-arrow"></div>
-				<a href="index.html">Home</a>
-				<a href="portfolio.html">Portfolio</a>
-				
-      </nav>
-			
-		</div>
+
+	<header class="site-header">
+		<a class="brand" href="index.html">
+			<img src="icons/cloud-icon.png" alt="">
+			<span>Michael Capera</span>
+		</a>
+
+		<button class="menu-toggle icon-menu" aria-label="Open menu" aria-controls="menu" aria-expanded="false"></button>
+
+		<nav class="menu" id="menu">
+			<a href="index.html" aria-current="page">Home</a>
+			<a href="portfolio.html" class="hint">Portfolio</a>
+		</nav>
 	</header>
 
 	<!--=====================================
-	PHOTO
+	HERO
 	======================================-->
 
-	<div id= "profilePhoto">
-  	<img id="photo" src="img/profilePhoto.png" alt="">
-    </div>
+	<main class="hero">
+		<img class="photo" src="img/profilePhoto.png" alt="Michael Capera">
 
-    <!--=====================================
-	NEON TEXT
-	======================================-->
+		<div>
+			<h1 class="hero-title">Software Engineer</h1>
+			<p class="hero-tagline">Web development, mobile apps, cloud &amp; AI.</p>
 
-    <div id="btnNeon">
-    
-    <br>
-	
+			<ul class="links">
+				<li>
+					<a class="btn-neon" href="https://github.com/MichaelCapera" target="_blank" rel="noopener noreferrer">
+						<span class="icon-github-circled" aria-hidden="true"></span>GitHub
+					</a>
+				</li>
+				<li>
+					<a class="btn-neon" href="https://www.linkedin.com/in/michael-capera-47ab0a18a/" target="_blank" rel="noopener noreferrer">
+						<span class="icon-linkedin-squared" aria-hidden="true"></span>LinkedIn
+					</a>
+				</li>
+				<li>
+					<a class="btn-neon" href="https://www.youtube.com/channel/UCaSM1nj8NqzN8HRd6_hyoEg" target="_blank" rel="noopener noreferrer">
+						<span class="icon-youtube-play" aria-hidden="true"></span>YouTube
+					</a>
+				</li>
+			</ul>
 
-	<a id="Soft" href="#" class="btn-neon" style="text-decoration: none;margin-top: 35%;">
-		<span class="span1"></span>
-		Software Engineer
-	</a>
-	<br>
+			<a class="btn-neon cta" href="portfolio.html">View portfolio &rarr;</a>
+		</div>
+	</main>
 
-	<a href="https://github.com/MichaelCapera" class="btn-neon" style="text-decoration: none;" target="blank">
-		<span class="span1"></span>
-		
-		<h2 class="icon-github-circled">Git Hub</h2>
-		
-	</a>
-	<br>
-	
-
-	<a href="https://www.linkedin.com/in/andr%C3%A9s-capera-47ab0a18a/" class="btn-neon" style="text-decoration: none;" target="blank">
-		<span class="span1"></span>
-	
-		<h2 class="icon-linkedin-squared">Liked In</h2>
-		
-	</a>
-	<br>
-
-	<a href="https://www.linkedin.com/in/michael-capera-47ab0a18a/" class="btn-neon" style="text-decoration: none;" target="blank">
-		<span class="span1"></span>
-		
-		<h2 class="icon-picasa">SOLOLEARN</h2>
-		
-	</a>
-	<br>
-
-	<a href="https://www.youtube.com/channel/UCaSM1nj8NqzN8HRd6_hyoEg" class="btn-neon" style="text-decoration: none;" target="blank">
-		<span class="span1"></span>
-		
-		<h2 class="icon-youtube-play">Youtube</h2>
-		
-	</a>
-	<br>
-	
-
-	<a href="mailto:michaelcapera@gmail.com" class="btn-neon" style="text-decoration: none;">
-		<span class="span1"></span>
-		
-		<h2 class="icon-mail">Mail</h2>
-		
-	</a><p><p>
-	    
-	    
-	
-
-	
-  </div>
-	
-
-
-  <!--=====================================
-	BACKGROUND IMAGES
-	======================================-->
-
-  
-  <div id= "fondo1"></div>
-  <div id= "fondo2"></div>
-  <div id= "fondo3"></div>
-  <div id= "fondo4"></div>
-
-<!--=====================================
+	<!--=====================================
 	FOOTER
 	======================================-->
 
-	 <footer>
- 	<div id="footer">
- 		<p id="copy-footer"></p>
- 	</div>
- 	
- </footer>
+	<footer class="site-footer">
+		<p>&copy; <span id="year">2026</span> Michael Capera</p>
+	</footer>
 
-
-
- 
-
- <!--=====================================
-	 JAVA SCRIPT
-	======================================--> 	
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script>
-		const year = new Date().getFullYear();
-		const copyText = `Michael Capera ${year} \u00A9`;
-		const copyElement = document.getElementById('copy-footer');
-		copyElement.textContent = copyText;
-
-	window.onload = () => {
-    setTimeout( () => {
-      const arrow = document.getElementById('mainArrow');
-      arrow.classList.add('hide-arrow');
-    }, 5000);
-  };
-	</script>
-
-    
-	
+	<script src="js/main.js"></script>
 </body>
-
 </html>
