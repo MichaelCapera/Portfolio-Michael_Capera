@@ -60,8 +60,14 @@ HERO
 	gap: 12px;
 }
 
-.cta {
+.ctas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
 	margin-top: 32px;
+}
+
+.cta {
 	border: 1px solid var(--neon);
 }
 
@@ -79,5 +85,9 @@ MOVIL Y TABLET VERTICAL
 
 	.links {
 		align-items: center;
+	}
+
+	.ctas {
+		justify-content: center;
 	}
 }

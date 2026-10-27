@@ -56,20 +56,21 @@
 						<li>Python</li>
 						<li>Django</li>
 						<li>React JS</li>
-						<li>AWS</li>
+						<li>Celery</li>
+						<li>AWS ECS</li>
 						<li>Terraform</li>
 					</ul>
 					<details class="card-details">
 						<summary>Details</summary>
-						<p>Cloud-native ERP platform supporting the company's operations and financial transactions.</p>
+						<p>Roca ERP: cloud-native ERP platform for business operations and financial transactions.</p>
 						<ul>
-							<li>Develop serverless, high-availability microservices with AWS Lambda (Python) and API Gateway.</li>
-							<li>Implemented Infrastructure as Code with Terraform, reducing deployment time by 40%.</li>
-							<li>Scaled core monolithic workflows with Celery background tasks and Docker containers on AWS ECS, automated through Bitbucket Pipelines.</li>
-							<li>Manage high-volume DynamoDB and RDS databases for financial transactions.</li>
-							<li>Apply unit testing and TDD, and maintain API documentation.</li>
+							<li>Develop Roca ERP features with a Python / Django backend and a React JS frontend.</li>
+							<li>Applied Spec-Driven Development (SDD): features are defined as specifications before implementation, keeping product, code and tests aligned.</li>
+							<li>Scaled core monolithic workflows by moving heavy processes to Celery workers running in Docker containers on AWS ECS.</li>
+							<li>Automated infrastructure with Terraform and CI/CD with Bitbucket Pipelines, reducing deployment time by 40%.</li>
+							<li>Built serverless microservices with AWS Lambda (Python) and API Gateway.</li>
 						</ul>
-						<p class="card-stack">Python · Django · Celery · React JS · AWS Lambda · API Gateway · ECS · Docker · Terraform · Bitbucket Pipelines · DynamoDB · RDS</p>
+						<p class="card-stack">Python · Django · Celery · React JS · Docker · AWS ECS · AWS Lambda · API Gateway · Terraform · Bitbucket Pipelines · RDS · DynamoDB</p>
 					</details>
 					<a class="card-link" href="https://rocaerp.com/" target="_blank" rel="noopener noreferrer">Go</a>
 				</article>
@@ -84,7 +85,7 @@
 					<ul class="tech">
 						<li>AWS Lambda</li>
 						<li>API Gateway</li>
-						<li>Terraform</li>
+						<li>AppSync</li>
 						<li>DynamoDB</li>
 						<li>Stencil JS</li>
 					</ul>
@@ -92,13 +93,12 @@
 						<summary>Details</summary>
 						<p>Serverless services and reusable web components for critical banking operations.</p>
 						<ul>
-							<li>Built serverless, high-availability applications with AWS Lambda (Node.js / Python) and API Gateway.</li>
-							<li>Provisioned and managed cloud resources as code with Terraform.</li>
-							<li>Managed high-volume DynamoDB and RDS databases for financial transactions.</li>
+							<li>Built serverless, high-availability applications with AWS Lambda (Node.js / Python), API Gateway and AppSync (GraphQL).</li>
 							<li>Created reusable Stencil.js web components to standardize UI development across the organization.</li>
+							<li>Managed high-volume DynamoDB and RDS databases for financial transactions.</li>
 							<li>Applied unit testing and TDD, and wrote API documentation.</li>
 						</ul>
-						<p class="card-stack">Node.js · Python · TypeScript · AWS Lambda · API Gateway · AppSync · Terraform · DynamoDB · RDS · Stencil JS</p>
+						<p class="card-stack">Node.js · Python · TypeScript · AWS Lambda · API Gateway · AppSync · DynamoDB · RDS · Terraform · Stencil JS</p>
 					</details>
 					<a class="card-link" href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas" target="_blank" rel="noopener noreferrer">Go</a>
 				</article>
@@ -162,11 +162,16 @@
 					<p class="card-type">Marketplace</p>
 					<p class="card-label">Technologies</p>
 					<ul class="tech">
-						<li>TypeScript</li>
-						<li>Angular</li>
-						<li>PHP</li>
 						<li>Laravel</li>
+						<li>Angular</li>
+						<li>MySQL</li>
+						<li>AWS</li>
 					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Home-delivery marketplace with a Laravel API, an Angular storefront and AWS hosting.</p>
+						<p class="card-stack">PHP · Laravel · TypeScript · Angular · MySQL · AWS</p>
+					</details>
 					<a class="card-link" href="https://compreloadomicilio.com/co" target="_blank" rel="noopener noreferrer">Go</a>
 				</article>
 			</li>
@@ -178,10 +183,16 @@
 					<p class="card-label">Technologies</p>
 					<ul class="tech">
 						<li>Angular</li>
-						<li>cPanel</li>
+						<li>Stencil JS</li>
+						<li>AppSync</li>
+						<li>API Gateway</li>
 						<li>PHP</li>
-						<li>TypeScript</li>
 					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Software company landing page built with Angular and Stencil.js components, backed by AWS and a PHP MVC backend.</p>
+						<p class="card-stack">TypeScript · Angular · Stencil JS · AWS AppSync · API Gateway · PHP (MVC) · cPanel</p>
+					</details>
 					<a class="card-link" href="https://www.nevadobit.com/" target="_blank" rel="noopener noreferrer">Go</a>
 				</article>
 			</li>
@@ -193,10 +204,14 @@
 					<p class="card-label">Technologies</p>
 					<ul class="tech">
 						<li>Vue JS</li>
-						<li>cPanel</li>
-						<li>PHP</li>
+						<li>Node.js</li>
 						<li>JavaScript</li>
 					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Landing page for an AI software lab, built with Vue JS and a Node.js backend.</p>
+						<p class="card-stack">Vue JS · Node.js · JavaScript · PHP · cPanel</p>
+					</details>
 					<p class="card-status">Inactive project</p>
 				</article>
 			</li>
@@ -222,13 +237,16 @@
 					<p class="card-type">Online courses</p>
 					<p class="card-label">Technologies</p>
 					<ul class="tech">
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>JavaScript</li>
-						<li>jQuery</li>
 						<li>PHP</li>
-						<li>SQL</li>
+						<li>JavaScript</li>
+						<li>CSS3</li>
+						<li>HTML5</li>
 					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Online courses platform built with PHP following the MVC pattern.</p>
+						<p class="card-stack">PHP (MVC) · JavaScript · jQuery · HTML5 · CSS3 · SQL</p>
+					</details>
 					<p class="card-status">Inactive project</p>
 				</article>
 			</li>
@@ -268,9 +286,13 @@
 					<ul class="tech">
 						<li>Angular</li>
 						<li>Firebase</li>
-						<li>TypeScript</li>
-						<li>JSON</li>
+						<li>PHP</li>
 					</ul>
+					<details class="card-details">
+						<summary>Details</summary>
+						<p>Ecommerce marketplace built mainly with Angular and Firebase, with PHP services.</p>
+						<p class="card-stack">TypeScript · Angular · Firebase · PHP · JSON</p>
+					</details>
 					<p class="card-status">Inactive project</p>
 				</article>
 			</li>
